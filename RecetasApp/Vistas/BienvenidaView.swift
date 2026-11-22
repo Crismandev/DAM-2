@@ -1,13 +1,12 @@
 import SwiftUI
 
 struct BienvenidaView: View {
-    // @Binding: el valor pertenece a ContentView; al cambiarlo aquí,
-    // ContentView reemplaza esta pantalla por Mis recetas.
+    
     @Binding var mostrarMisRecetas: Bool
 
     var body: some View {
         ZStack {
-            // El fondo ignora el área segura para cubrir toda la pantalla.
+            
             Color.orange
                 .ignoresSafeArea()
 

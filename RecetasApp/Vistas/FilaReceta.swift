@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct FilaReceta: View {
-    // Solo muestra datos, no los cambia: por eso basta con let.
+    
     let receta: Receta
 
     var body: some View {

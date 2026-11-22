@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct MisRecetasView: View {
-    // Esta vista es la dueña de los datos; el Registro los recibe con @Binding.
+    
     @State private var recetas = Receta.ejemplos
 
     var body: some View {
@@ -35,8 +35,7 @@ struct MisRecetasView: View {
         }
     }
 
-    // Se busca por id y no por la posición de la fila,
-    // porque la posición puede cambiar si la lista cambia.
+    
     private func alternarFavorita(_ receta: Receta) {
         if let indice = recetas.firstIndex(where: { $0.id == receta.id }) {
             recetas[indice].esFavorita.toggle()
